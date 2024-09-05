@@ -16,7 +16,8 @@ def main():
         st.session_state.is_user = False
 
     if not session_state.is_logged_in:
-        login()
+        # login()
+        sidebar_admin_page()
     else:
         # เมื่อ login สำเร็จ, เลือกแสดงหน้าต่างๆ ตามต้องการ
         if st.session_state.is_admin:
